@@ -63,3 +63,4 @@ typings/
 ## REPO specific
 .vscode/launch.json
 dist
+env.bat

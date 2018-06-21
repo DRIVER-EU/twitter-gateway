@@ -168,5 +168,6 @@ if (options.version) {
 } else {
   options.kafka = options.kafka.replace('http://', '');
   options.registry = options.registry.replace('http://', '');
+  // console.log(JSON.stringify(options, null, 2));
   new App(options);
 }
