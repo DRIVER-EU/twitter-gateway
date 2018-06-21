@@ -37,6 +37,10 @@ export class App {
       const name = this.options.id;
       const owner = this.options.id;
       const senderName = this.options.id;
+      const location = {
+        latitude: 52.110051,
+        longitude: 4.326812
+      };
       const posts = [
         {
           guid: uuid4(),
@@ -46,7 +50,8 @@ export class App {
           senderName,
           visibleForParticipant,
           date,
-          body: `This is a simple test message sent at ${time}.`,
+          location,
+          body: `This is a simple test message from TNO sent at ${time}.`,
         } as ISimulationEntityPost,
         {
           guid: uuid4(),
