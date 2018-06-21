@@ -6,6 +6,10 @@ Gateway service to post tweets, published to the Kafka-based DRIVER+ Test-bed, t
 
 You will need valid Twitter developer credentials in the form of a set of consumer and access tokens/keys. You can get these [here](https://apps.twitter.com). Do not forgot to adjust your permissions - most POST request require write permissions. Next, update your [privacy settings](https://twitter.com/settings/safety), so not everyone will be able to follow your tweets.
 
+## Installation
+
+To install it globally, run `npm i -g twitter-gateway`.
+
 ## Usage
 
 Run `twitter-gateway` to start listening to the $CONSUME_TOPIC topic. Each received message is posted to Twitter. Please note that, in case you are including multiple media files, only the first is uploaded and sent. In case you have just started the DRIVER+ Test-bed, initialize it using `twitter-gateway -s --test`, so you upload the basic schemas as well as publish a test message to the CONSUME topic.
