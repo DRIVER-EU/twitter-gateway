@@ -1,0 +1,50 @@
+{
+  "type": "array",
+  "name": "Configuration",
+  "namespace": "eu.driver.model.sim",
+  "doc": "Twitter messages.",
+  "items": {
+    "name": "Tweet",
+    "type": "record",
+    "fields": [
+      {
+        "name": "status",
+        "type": "string",
+        "doc": "Main message of the tweet"
+      },
+      {
+        "name": "alt_text",
+        "type": ["null", {
+          "name": "alt_text",
+          "type": "record",
+          "fields": [
+            {
+              "name": "text",
+              "type": "string"
+            }
+          ]
+        }],
+        "doc": "Alternative text for a media item",
+        "default": null
+      },
+      {
+        "name": "media_data",
+        "type": ["null", "string"],
+        "doc": "Base64 encoded media",
+        "default": null
+      },
+      {
+        "name": "lat",
+        "type": ["null", "double"],
+        "doc": "Latitude, WGS83",
+        "default": null
+      },
+      {
+        "name": "lon",
+        "type": ["null", "double"],
+        "doc": "Longitude, WGS83",
+        "default": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "twitter-gateway",
+  "version": "0.0.1",
+  "description": "A gateway that post tweets, published to the test-bed, to twitter.",
+  "main": "cli.js",
+  "typings": "dist/cli.d.ts",
+  "bin": "./bin/run.js",
+  "dependencies": {
+    "command-line-args": "^5.0.2",
+    "command-line-usage": "^5.0.5",
+    "node-test-bed-adapter": "^0.4.5",
+    "twit": "^2.2.10"
+  },
+  "devDependencies": {
+    "@types/command-line-args": "^5.0.0",
+    "@types/command-line-usage": "^5.0.1",
+    "@types/twit": "^2.2.13",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "build": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DRIVER-EU/twitter-gateway.git"
+  },
+  "keywords": [
+    "driver+",
+    "twitter",
+    "test-bed",
+    "simulation"
+  ],
+  "author": "Erik Vullings <erik.vullings@gmail.com> (http://www.tno.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DRIVER-EU/twitter-gateway/issues"
+  },
+  "homepage": "https://github.com/DRIVER-EU/twitter-gateway#readme"
+}

@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}\\cli.js",
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ],
+      "args":[
+        "-s",
+        "-t"
+      ],
+      "env": {
+        "KAFKA": "localhost:3501",
+        "SCHEMA": "localhost:3502",
+        "CONSUME_TOPIC": "simulation_entity_post",
+        "CONSUMER_KEY": "See README.md how to get your own values - afterwards, rename this file to launch.json.",
+        "CONSUMER_SECRET": "",
+        "ACCESS_TOKEN": "",
+        "ACCESS_SECRET": ""
+      }
+    }
+  ]
+}
