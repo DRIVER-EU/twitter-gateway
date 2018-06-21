@@ -1,6 +1,6 @@
 {
   "name": "twitter-gateway",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A gateway that post tweets, published to the test-bed, to twitter.",
   "main": "cli.js",
   "typings": "dist/cli.d.ts",
