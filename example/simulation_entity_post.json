@@ -1,0 +1,206 @@
+[
+  {
+    "topic": "simulation_entity_post",
+    "key": {
+      "distributionID": "5b63795d-65c9-41cb-b9d6-c77c30aed108",
+      "senderID": "CSharpTestbedAdapter",
+      "dateTimeSent": 63666985083587,
+      "dateTimeExpires": 63666985143587,
+      "distributionStatus": "Unknown",
+      "distributionKind": "Unknown"
+    },
+    "value": {
+      "guid": "181",
+      "name": "<empty>",
+      "owner": "xvr-cm",
+      "mediumType": "MICROBLOG",
+      "mediumName": "55",
+      "header": "Microblog Network Message",
+      "intro": "<empty>",
+      "body": "Message 1 #driver-test",
+      "files": null,
+      "visibleForParticipant": true,
+      "senderName": "Journalist",
+      "senderRole": "<empty>",
+      "recipients": null,
+      "date": 1521630006000,
+      "location": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    "partition": 0,
+    "offset": 0,
+    "$$hashKey": "object:105"
+  },
+  {
+    "topic": "simulation_entity_post",
+    "key": {
+      "distributionID": "1edaaa45-c3ec-4358-942c-6acfcd9b6d8e",
+      "senderID": "CSharpTestbedAdapter",
+      "dateTimeSent": 63666985084962,
+      "dateTimeExpires": 63666985144962,
+      "distributionStatus": "Unknown",
+      "distributionKind": "Unknown"
+    },
+    "value": {
+      "guid": "180",
+      "name": "<empty>",
+      "owner": "xvr-cm",
+      "mediumType": "MICROBLOG",
+      "mediumName": "55",
+      "header": "Microblog Network Message",
+      "intro": "<empty>",
+      "body": "Message 2 #driver-test",
+      "files": null,
+      "visibleForParticipant": true,
+      "senderName": "Frida",
+      "senderRole": "<empty>",
+      "recipients": null,
+      "date": 1521630008000,
+      "location": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    "partition": 0,
+    "offset": 1,
+    "$$hashKey": "object:106"
+  },
+  {
+    "topic": "simulation_entity_post",
+    "key": {
+      "distributionID": "75efcede-d314-4ddc-8ac6-bc3ef67c1dd1",
+      "senderID": "CSharpTestbedAdapter",
+      "dateTimeSent": 63666985086975,
+      "dateTimeExpires": 63666985146975,
+      "distributionStatus": "Unknown",
+      "distributionKind": "Unknown"
+    },
+    "value": {
+      "guid": "179",
+      "name": "<empty>",
+      "owner": "xvr-cm",
+      "mediumType": "MICROBLOG",
+      "mediumName": "55",
+      "header": "Microblog Network Message",
+      "intro": "<empty>",
+      "body": "Message 3 #driver-test",
+      "files": null,
+      "visibleForParticipant": true,
+      "senderName": "Polizei",
+      "senderRole": "<empty>",
+      "recipients": null,
+      "date": 1521630010000,
+      "location": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    "partition": 0,
+    "offset": 2,
+    "$$hashKey": "object:107"
+  },
+  {
+    "topic": "simulation_entity_post",
+    "key": {
+      "distributionID": "54406329-d193-47fe-8f89-8a88c5fc2b61",
+      "senderID": "CSharpTestbedAdapter",
+      "dateTimeSent": 63666985089050,
+      "dateTimeExpires": 63666985149050,
+      "distributionStatus": "Unknown",
+      "distributionKind": "Unknown"
+    },
+    "value": {
+      "guid": "178",
+      "name": "<empty>",
+      "owner": "xvr-cm",
+      "mediumType": "MICROBLOG",
+      "mediumName": "55",
+      "header": "Microblog Network Message",
+      "intro": "<empty>",
+      "body": "Message 4 #driver-test",
+      "files": null,
+      "visibleForParticipant": true,
+      "senderName": "Journalist",
+      "senderRole": "<empty>",
+      "recipients": null,
+      "date": 1521630012000,
+      "location": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    "partition": 0,
+    "offset": 3,
+    "$$hashKey": "object:108"
+  },
+  {
+    "topic": "simulation_entity_post",
+    "key": {
+      "distributionID": "07c2e96e-ffca-421b-9559-8ee03ac5ff35",
+      "senderID": "CSharpTestbedAdapter",
+      "dateTimeSent": 63666985090993,
+      "dateTimeExpires": 63666985150993,
+      "distributionStatus": "Unknown",
+      "distributionKind": "Unknown"
+    },
+    "value": {
+      "guid": "177",
+      "name": "<empty>",
+      "owner": "xvr-cm",
+      "mediumType": "MICROBLOG",
+      "mediumName": "55",
+      "header": "Microblog Network Message",
+      "intro": "<empty>",
+      "body": "Message 5 #driver-test",
+      "files": null,
+      "visibleForParticipant": true,
+      "senderName": "Frida",
+      "senderRole": "<empty>",
+      "recipients": null,
+      "date": 1521630014000,
+      "location": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    "partition": 0,
+    "offset": 4,
+    "$$hashKey": "object:109"
+  },
+  {
+    "topic": "simulation_entity_post",
+    "key": {
+      "distributionID": "9f0ad7d6-1af9-40f5-aff8-b4a3175cf0f7",
+      "senderID": "CSharpTestbedAdapter",
+      "dateTimeSent": 63666985093012,
+      "dateTimeExpires": 63666985153012,
+      "distributionStatus": "Unknown",
+      "distributionKind": "Unknown"
+    },
+    "value": {
+      "guid": "176",
+      "name": "<empty>",
+      "owner": "xvr-cm",
+      "mediumType": "MICROBLOG",
+      "mediumName": "55",
+      "header": "Microblog Network Message",
+      "intro": "<empty>",
+      "body": "Message 6 #driver-test",
+      "files": null,
+      "visibleForParticipant": true,
+      "senderName": "Polizei",
+      "senderRole": "<empty>",
+      "recipients": null,
+      "date": 1521630016000,
+      "location": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    "partition": 0,
+    "offset": 5,
+    "$$hashKey": "object:110"
+  }
+]
