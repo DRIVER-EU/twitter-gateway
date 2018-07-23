@@ -1,7 +1,7 @@
 {
   "name": "twitter-gateway",
   "version": "0.1.2",
-  "description": "A gateway that post tweets, published to the test-bed, to twitter.",
+  "description": "A gateway that post tweets, published to the Apache Kafka-based Test-bed, to twitter.",
   "main": "cli.js",
   "typings": "dist/cli.d.ts",
   "bin": "./bin/run.js",
@@ -9,12 +9,12 @@
     "command-line-args": "^5.0.2",
     "command-line-usage": "^5.0.5",
     "node-test-bed-adapter": "^0.4.5",
-    "twit": "^2.2.10"
+    "twit": "^2.2.11"
   },
   "devDependencies": {
     "@types/command-line-args": "^5.0.0",
     "@types/command-line-usage": "^5.0.1",
-    "@types/twit": "^2.2.14",
+    "@types/twit": "^2.2.16",
     "typescript": "^2.9.2"
   },
   "scripts": {
