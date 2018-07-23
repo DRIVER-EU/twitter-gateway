@@ -1,6 +1,6 @@
 {
   "name": "twitter-gateway",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A gateway that post tweets, published to the Apache Kafka-based Test-bed, to twitter.",
   "main": "cli.js",
   "typings": "dist/cli.d.ts",
