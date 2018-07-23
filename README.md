@@ -43,6 +43,8 @@ Alternatively, you can specify them via the command line. Run `twitter-gateway -
 
 `npm run build` to build to the `./dist` folder.
 
+![Application structure](graph.svg)
+
 ## NOTE
 
 When using this gateway service, you may encounter several errors:
