@@ -1,5 +1,5 @@
 import { uuid4 } from './helpers/utils';
-import { ISimulationEntityPost } from './models/simulation-entity-post';
+import { ISimulationEntityPost, MediumTypes } from './models/simulation-entity-post';
 import { KafkaService } from './services/kafka-service';
 import { ICommandOptions } from './cli';
 import { TwitterService } from './services/twitter-service';
@@ -32,37 +32,41 @@ export class App {
     if (options.test) {
       const date = Date.now();
       const time = Date();
-      const medium = 'twitter';
+      const mediumType = MediumTypes.MICROBLOG;
       const visibleForParticipant = true;
       const name = this.options.id;
       const owner = this.options.id;
       const senderName = this.options.id;
+      const mediumName = 'test-bed';
       const location = {
         latitude: 52.110051,
-        longitude: 4.326812
+        longitude: 4.326812,
       };
-      const posts = [
+      const posts: ISimulationEntityPost[] = [
         {
           guid: uuid4(),
           name,
           owner,
-          medium,
+          mediumType,
+          mediumName,
           senderName,
           visibleForParticipant,
           date,
           location,
           body: `This is a simple test message from TNO sent at ${time}.`,
-        } as ISimulationEntityPost,
+        },
         {
           guid: uuid4(),
           name,
           owner,
-          medium,
+          mediumType,
+          mediumName,
           senderName,
           visibleForParticipant,
           date,
           body: `This is a test message containing an image sent at ${time}.`,
-          files: [`iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+          files: [
+            `iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
       jwv8YQUAAAMAUExURQAAAAEBAQICAgMDAwQEBAUFBQYGBgcHBwgICAkJCQoKCgsLCwwMDA0NDQ4O
       Dg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEh
       ISIiIiMjIyQkJCUlJSYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0
@@ -117,7 +121,8 @@ export class App {
       jLRqgoOU1FxKvIQJ+mZ5pCSVhdH3c3Ev0aqFu/WrXJ/c5zS9Ohf2tz2rqrlKP/RfM/NebcLWPzk8
       iqPkhuSKMcGJcaYhuWI85Pr8wi2HH8CKmRpoL7UcSb9n++Qk1afTrY9PtOUXXic2hL8Y/zfhMPwH
       ZoblFKWFgCwAAAAASUVORK5CYII=
-      `],
+      `,
+          ],
         },
       ];
       kafka.on('ready', () => kafka.send(posts));
