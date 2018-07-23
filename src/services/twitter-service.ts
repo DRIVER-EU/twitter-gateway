@@ -1,5 +1,5 @@
-import { ICommandOptions } from '../cli';
 import Twit from 'twit';
+import { ICommandOptions } from '../cli';
 import { ITweet } from '../models/tweet';
 
 export class TwitterService {
@@ -18,9 +18,7 @@ export class TwitterService {
 
   public update(tweets: ITweet | ITweet[]) {
     tweets = tweets instanceof Array ? tweets : [tweets];
-    const post = (tweet: ITweet) => {
-      return this.twit.post('/statuses/update', tweet);
-    };
+    const post = (tweet: ITweet) => this.twit.post('/statuses/update', tweet);
     const uploadMedia = (tweet: ITweet) => {
       return this.twit.post('media/upload', { media_data: tweet.media_data }).then((value) => {
         const mediaIdStr = (value.data as any).media_id_string as string;
