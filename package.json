@@ -8,17 +8,17 @@
   "dependencies": {
     "command-line-args": "^5.0.2",
     "command-line-usage": "^5.0.5",
-    "node-test-bed-adapter": "^0.4.5",
+    "node-test-bed-adapter": "^0.5.4",
     "twit": "^2.2.11"
   },
   "devDependencies": {
     "@types/command-line-args": "^5.0.0",
     "@types/command-line-usage": "^5.0.1",
-    "@types/twit": "^2.2.16",
-    "typescript": "^2.9.2"
+    "@types/twit": "^2.2.19",
+    "typescript": "^3.0.3"
   },
   "scripts": {
-    "build": "tsc -w",
+    "start": "tsc -w",
     "patch-release": "npm version patch && npm publish && git push --follow-tags",
     "minor-release": "npm version minor && npm publish && git push --follow-tags"
   },
